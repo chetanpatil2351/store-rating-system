@@ -142,7 +142,7 @@ store-rating-system/
 ### 1. Clone the Repository
 
 ```bash
-git clone <YOUR_GITHUB_REPOSITORY_URL>
+git clone https://github.com/chetanpatil2351/store-rating-system.git
 cd store-rating-system
 ```
 
