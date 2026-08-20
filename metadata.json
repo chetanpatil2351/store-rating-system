@@ -1,0 +1,6 @@
+{
+  "name": "Store Rating System",
+  "description": "Store rating and user review management portal with role-based features for System Administrators, Normal Users, and Store Owners.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
