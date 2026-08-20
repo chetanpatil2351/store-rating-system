@@ -98,7 +98,7 @@ The database uses relationships, constraints and parameterized queries to mainta
 
 ## Project Structure
 
-```text
+ text
 store-rating-system/
 │
 ├── backend/
@@ -129,7 +129,7 @@ store-rating-system/
 ├── tsconfig.json
 ├── vite.config.ts
 └── README.md
-```
+ 
 
 ## Getting Started
 
@@ -141,16 +141,16 @@ store-rating-system/
 
 ### 1. Clone the Repository
 
-```bash
-git clone https://github.com/chetanpatil2351/store-rating-system.git
+ bash
+git clone <YOUR_GITHUB_REPOSITORY_URL>
 cd store-rating-system
-```
+ 
 
 ### 2. Install Dependencies
 
-```bash
+ bash
 npm install
-```
+ 
 
 ### 3. Configure Environment Variables
 
@@ -158,59 +158,59 @@ Create a `.env` file in the project root using `.env.example` as a reference.
 
 Example:
 
-```env
+ env
 DATABASE_URL=your_postgresql_connection_string
 JWT_SECRET=your_secure_jwt_secret
-```
+ 
 
 Do not commit the `.env` file to GitHub.
 
 ### 4. Run the Application
 
-```bash
+ bash
 npm run dev
-```
+ 
 
 Open:
 
-```text
+
 http://localhost:3000
-```
+
 
 ### 5. Check Database Connection
 
 Open:
 
-```text
+
 http://localhost:3000/api/health
-```
+ 
 
 A successful response should contain:
 
-```json
+ json
 {
   "status": "ok",
   "database": "connected"
 }
-```
+ 
 
 ### 6. Run TypeScript Validation
 
-```bash
+ bash
 npm run lint
-```
+ 
 
 ### 7. Create Production Build
 
-```bash
+bash
 npm run build
-```
+
 
 ### 8. Start Production Server
 
-```bash
+bash
 npm start
-```
+
 
 ## API Endpoints
 
