@@ -7,6 +7,7 @@ The application allows users to browse registered stores and submit or modify ra
 ## Tech Stack
 
 ### Frontend
+
 - React 19
 - TypeScript
 - Vite
@@ -15,16 +16,19 @@ The application allows users to browse registered stores and submit or modify ra
 - Lucide React
 
 ### Backend
+
 - Node.js
 - Express.js
 - TypeScript
 - REST API
 
 ### Database
+
 - PostgreSQL
 - `pg` connection pool
 
 ### Authentication & Security
+
 - JWT authentication
 - bcrypt password hashing
 - Role-Based Access Control (RBAC)
@@ -34,6 +38,7 @@ The application allows users to browse registered stores and submit or modify ra
 ## User Roles
 
 ### System Administrator
+
 - View total users, stores and submitted ratings
 - Add stores
 - Add normal users and admin users
@@ -44,6 +49,7 @@ The application allows users to browse registered stores and submit or modify ra
 - Logout
 
 ### Normal User
+
 - Sign up and login
 - View registered stores
 - Search stores by name and address
@@ -55,6 +61,7 @@ The application allows users to browse registered stores and submit or modify ra
 - Logout
 
 ### Store Owner
+
 - Login through the common authentication system
 - View the average rating of their store
 - View users who submitted ratings for their store
@@ -98,7 +105,7 @@ The database uses relationships, constraints and parameterized queries to mainta
 
 ## Project Structure
 
- text
+```text
 store-rating-system/
 │
 ├── backend/
@@ -129,7 +136,6 @@ store-rating-system/
 ├── tsconfig.json
 ├── vite.config.ts
 └── README.md
- 
 
 ## Getting Started
 
@@ -141,16 +147,15 @@ store-rating-system/
 
 ### 1. Clone the Repository
 
- bash
-git clone <YOUR_GITHUB_REPOSITORY_URL>
+```bash
+git clone https://github.com/chetanpatil2351/store-rating-system.git
 cd store-rating-system
- 
 
 ### 2. Install Dependencies
 
- bash
+```bash
 npm install
- 
+```
 
 ### 3. Configure Environment Variables
 
@@ -158,59 +163,59 @@ Create a `.env` file in the project root using `.env.example` as a reference.
 
 Example:
 
- env
+```env
 DATABASE_URL=your_postgresql_connection_string
 JWT_SECRET=your_secure_jwt_secret
- 
+```
 
 Do not commit the `.env` file to GitHub.
 
 ### 4. Run the Application
 
- bash
+```bash
 npm run dev
- 
+```
 
 Open:
 
-
+```text
 http://localhost:3000
-
+```
 
 ### 5. Check Database Connection
 
 Open:
 
-
+```text
 http://localhost:3000/api/health
- 
+```
 
 A successful response should contain:
 
- json
+```json
 {
   "status": "ok",
   "database": "connected"
 }
- 
+```
 
 ### 6. Run TypeScript Validation
 
- bash
+```bash
 npm run lint
- 
+```
 
 ### 7. Create Production Build
 
-bash
+```bash
 npm run build
-
+```
 
 ### 8. Start Production Server
 
-bash
+```bash
 npm start
-
+```
 
 ## API Endpoints
 
